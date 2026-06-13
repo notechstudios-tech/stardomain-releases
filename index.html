@@ -172,7 +172,7 @@
 
     .screenshot-grid {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 16px;
     }
 
@@ -184,6 +184,10 @@
       border-radius: 10px;
       border: 1px solid #222;
       display: block;
+    }
+
+    @media (max-width: 560px) {
+      .screenshot-grid { grid-template-columns: 1fr; }
     }
 
     .install {
