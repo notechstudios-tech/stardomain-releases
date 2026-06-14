@@ -118,6 +118,28 @@
 
     .download-btn:hover { background: #3385e0; }
 
+    .btn-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .itch-btn {
+      display: inline-block;
+      background: #fa5c5c;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .itch-btn:hover { background: #ff7676; }
+
     .version-note {
       margin-top: 14px;
       font-size: 0.82rem;
@@ -264,9 +286,14 @@
 <section class="hero">
   <h2>Command an empire<br>across the stars.</h2>
   <p>Capture worlds, command fleets, and conquer a living galaxy of 160+ stars in this turn-based strategy game. Fight dynamic ship battles, research technology, and crush the enemy empire — or be crushed.</p>
-  <a class="download-btn" href="https://github.com/notechstudios-tech/stardomain-releases/releases/latest/download/app-release.apk">
-    Download
-  </a>
+  <div class="btn-row">
+    <a class="download-btn" href="https://github.com/notechstudios-tech/stardomain-releases/releases/latest/download/app-release.apk">
+      Download APK
+    </a>
+    <a class="itch-btn" href="https://notechstudios.itch.io/stardomain-strike">
+      Get it on itch.io
+    </a>
+  </div>
   <div class="version-note">Android 5.0+ &nbsp;·&nbsp; Free &nbsp;·&nbsp; v1.0.0</div>
 </section>
 
